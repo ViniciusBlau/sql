@@ -1,0 +1,6 @@
+insert into usuarios values(1,'u1');
+insert into usuarios values(2,'u2');
+insert into usuarios values(3,'u3');
+insert into cartaos values(1,'c1',1,'estudante');
+insert into cartaos values(2,'c2',1,'trabalhador');
+insert into cartaos values(3,'c3',2,'trabalhador');
