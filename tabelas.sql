@@ -33,6 +33,6 @@ create table onibus (
   linha int not null,
   horario timestamp not null,
   primary key (id),
-  foreign key (horario) references onibus(horario)
+  //foreign key (horario) references onibus(horario) tirar essa linha
 );
 
