@@ -1,0 +1,16 @@
+DELIMITER //
+CREATE FUNCTION retorna_nm_usuario_cartao(id_cartao int) 
+RETURNS varchar(255) 
+DETERMINISTIC
+BEGIN
+    DECLARE nm_usu  varchar(255);
+    
+    Select nome
+    from   usuarios a
+    inner join cartaos b on (a.n = b.usuario_n)
+    where b.n = id_cartao
+    into nm_usu;
+    
+    RETURN nm_usu;
+END //
+DELIMITER ;
